@@ -1,0 +1,214 @@
+*{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.nav {
+    display: flex;
+    background-color: rgba(255, 254, 251, 0.5);
+    border-radius: 5px;
+    justify-content: flex-end;
+  }
+.sticky{
+  position: fixed;
+  top:0;
+  left: 1000px;
+}
+
+.splash-page{
+  display: flex;
+  flex-direction: column;
+  background: rgb(255, 254, 251);
+}
+  /* For the aesthetics */
+  .nav-button{
+    color:rgb(14, 14, 14);
+    font-size: large;
+    padding-left: 50px;
+  }
+  .nav-button span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  .nav-button span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  .nav-button:hover span {
+    padding-right: 25px;
+  }
+  .nav-button:hover span::after {
+    opacity: 1;
+    right: 0;
+  }
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .globalTitleBox{
+    display: flex;
+    font-size: 50px;
+    justify-content: center;
+  }
+  .secondTitleBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    font-size: 40px;
+  }
+  .thirdTitleBox{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding-left: 45px;
+    margin: 20px;
+    font-size: 30px;
+  }
+  .textBox{
+    display: flex;
+    font-size: 20px;
+    text-align: start;
+  }
+  .personalImg{
+    width: auto;
+    border-radius: 5px;
+    height: 600px;
+  }
+  .Wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 20px;
+  }
+  .miniWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 20px;
+    max-width: 40%;
+  }
+  .contactContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px;
+  }
+  .iconBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  .icon{
+    width: 40px;
+  }
+  .icon:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+  #github{
+    padding: 20px;
+  }
+  #linkedin{
+    padding: 20px;
+  }
+  #instagram{
+    padding: 20px;
+  }
+  #xText{
+    font-size: 25px;
+    text-decoration: underline;
+    color:rgb(14, 14, 14);
+  }
+  .listBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 20px;
+
+  }
+  .formButton{
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    border: transparent;
+    background-color: #e16259;
+    color:white;
+    margin: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  .formButton:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+    transition: .5s;
+  }
+  .buttonWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 20px;
+  }
+  .gridContainer{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows:minmax(150px, auto);
+    grid-gap: 1em;
+  }
+  .gridTitle{
+    font-size: 50px;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    text-align: center;
+  }
+  .gridItem{
+    background-color: rgb(255, 251, 245);
+    grid-column-start: 4;
+    grid-column-end: 6;
+    border-radius: 10px;
+    transition: box-shadow .5s;
+    text-decoration: none;
+  }
+  .gridItem:hover{
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+  }
+  .gridDescription{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    margin: 0;
+  }
+  #gridDescription{
+    color: #00000099;
+  }
+  .projectTitle{
+    color: #00000099;
+  }
+  .formContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+  }
+  .formInput{
+    font-size: 20px;
+    margin: 20px;
+    font-weight: bold;
+  }
+  .typeInput{
+    width: 100%;
+  }
+  #feedbackBody{
+    height: 70px;
+  }

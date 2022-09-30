@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Curtis Yu">
+    <title> My projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav sticky">
+        <a href="index.html">
+            <div class="nav-button"><span>About</span></div>
+        </a>
+        <a href="project.html">
+            <div class="nav-button"><span>Project</span></div>
+        </a>
+        <a href="#Contact">
+            <div class="nav-button"><span>Contact</span></div>
+        </a>
+    </div>
+    <div class="gridContainer">
+        <h1 class="gridTitle">Here's what I've done</h1>
+        <h2 class="gridDescription">Personal projects
+            <p class="textBox" id="gridDescription">Those projects are my favorite. Especially the Hotel reservation application and Gitlet, which are build from scracth. Please have a look at them! </p>
+        </h2>
+        <a class="gridItem" href="https://github.com/curtisyu0411/Hotel-Reservation">
+            <h3 class="projectTitle">Hotel Reservation App
+                <ul style="font-size: 15px;">
+                    <li>Created a command line App with two menus designed for reservation and administration.</li>
+                    <li>Supported account creation, availability checking, auto recommendation, room adding, etc.</li>
+                    <li>Structuralized the App with four layers to separate responsibilities and support modularization.</li>
+                </ul>
+            </h3>
+        </a>
+        <a class="gridItem" href="https://github.com/curtisyu0411/Parallel-WebCrawler">
+            <h3 class="projectTitle">Parallel WebCrawler
+                <ul style="font-size: 15px;">
+                    <li>Improved a sequential web crawler to a parallel web crawler using fork-join pools and synchronization.</li>
+                    <li>Restructured the project using maven and utilized several design patterns to improve the reusability of the project.</li>
+                    <li>Created a profiler to record the performance of the web crawler. Improve the performance nearly 3 times.</li>
+                </ul>
+            </h3>
+        </a>
+        <a  class="gridItem" href="https://github.com/curtisyu0411/NumC">
+            <h3 class="projectTitle">NumC
+                <ul style="font-size: 15px;">
+                    <li>Mimicked NumPy library in C including matrix multiplication, power of a matrix, and several simple operations.</li>
+                    <li>Combined repeated squaring algorithm, SIMD instructions, and OpenMP library in implementations.</li>
+                    <li>Speeded up matrix multiplication around 56 times and power of a matrix around 1200 times.</li>
+                </ul>
+            </h3>
+        </a>
+        <a class="gridItem" href="https://github.com/curtisyu0411/Gitlet">
+            <h3 class="projectTitle">Gitlet
+                <ul style="font-size: 15px;">
+                    <li>Implemented a version-control system from scratch that mimics some of the basic features of Git.</li>
+                    <li>Supporting nearly 20 commands including merge, push, pull, local remote, etc.</li>
+                    <li>Boosted merging speed by using the Lowest Common Ancestor algorithm.</li>
+                </ul>
+            </h3>
+        </a>
+        <a class="gridItem" href="https://github.com/curtisyu0411/Ataxx-Board-Game">
+            <h3 class="projectTitle">Ataxx
+                <ul style="font-size: 15px;">
+                    <li>Built a board game from concept to product, accomplished with an opposing AI.</li>
+                    <li>Utilized alpha-beta pruning, heuristic estimation, and minimax algorithm to implement the AI.</li>
+                    <li>Accomplished the AI with the ability to guarantee a win within a certain number of moves.</li>
+                </ul>
+            </h3>
+        </a>
+    </div>
+    <h6 class="contactContainer" id="Contact">
+        <!-- <div class="thirdTitleBox"> Contact </div> -->
+        <p style="font-size: 25px;"> Contact </p>
+        <div class="iconBox">
+            <a href="https://github.com/curtisyu0411" target="_blank">
+                <img class = "icon" src="github.png" alt="github icon" id="github" >
+            </a>
+            <a href="https://www.linkedin.com/in/curtisyu0411/" target="_blank">
+                <img class = "icon" src="linkedin.png" alt="linkedin icon" id="linkedin" >
+            </a>
+            <a href="https://www.instagram.com/curtis_yu_0411/" target="_blank">
+                <img class = "icon" src="instagram.png" alt="instagram icon" id = "instagram">
+            </a>
+        </div>
+    </h6>
+</body>
+</html>

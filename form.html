@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Curtis Yu">
+    <title>FeedBack Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function popup(){
+            var name = document.getElementById("name").value;
+            var newContent = `Thank you ${name} !`;
+            var needPopup = document.getElementById("popUp");
+            needPopup.innerHTML = newContent;
+            event.preventDefault();
+        }
+    </script>
+</head>
+
+<body>
+    <div class="nav sticky">
+        <a href="index.html">
+            <div class="nav-button"><span>About</span></div>
+        </a>
+        <a href="project.html">
+            <div class="nav-button"><span>Project</span></div>
+        </a>
+        <a href="#Contact">
+            <div class="nav-button"><span>Contact</span></div>
+        </a>
+    </div>
+    <h1 class="globalTitleBox">Let's be friends !</h1>
+    <div>
+        <form class="formContainer">
+            <div class="formInput">
+                <label> Name:</label>
+                <input type="text" class="typeInput" id="name">   
+            </div>
+            <div class="formInput">
+                <label>Email:</label>
+                <input type="text" class="typeInput" id="email">  
+            </div>
+            <div class="formInput">
+                <label >Leave your thought here !</label>
+                <input type="text" class="typeInput" id="feedbackBody">
+            </div>
+            <input onclick="popup()" type="submit" class="formButton">
+        </form>
+    </div>
+    <h3 class="secondTitleBox" id="popUp">
+    </h3>
+    <h5 class="contactContainer" id="Contact">
+        <!-- <div class="thirdTitleBox"> Contact </div> -->
+        <p style="font-size: 25px;"> Contact </p>
+        <div class="iconBox">
+            <a href="https://github.com/curtisyu0411" target="_blank">
+                <img class = "icon" src="github.png" alt="github icon" id="github" >
+            </a>
+            <a href="https://www.linkedin.com/in/curtisyu0411/" target="_blank">
+                <img class = "icon" src="linkedin.png" alt="linkedin icon" id="linkedin" >
+            </a>
+            <a href="https://www.instagram.com/curtis_yu_0411/" target="_blank">
+                <img class = "icon" src="instagram.png" alt="instagram icon" id = "instagram">
+            </a>
+        </div>
+    </h5>
+</body>
+</html>
